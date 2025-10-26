@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
+    private AnimationHandler animationHandler;
     
 
     private Vector2 movingDir = Vector2.zero;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        animationHandler = GetComponentInChildren<AnimationHandler>();
     }
 
     private void Update()
@@ -26,5 +28,7 @@ public class PlayerController : MonoBehaviour
 
         movingDir = new Vector2(movingX, movingY).normalized;
         _rigidbody.velocity = movingDir * 5f;
+
+        animationHandler.Move(movingDir);
     }
 }
