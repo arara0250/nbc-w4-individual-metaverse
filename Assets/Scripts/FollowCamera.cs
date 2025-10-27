@@ -25,7 +25,7 @@ public class FollowCamera : MonoBehaviour
 
         // camera 추적 범위 제한
         cameraPos.x = Mathf.Clamp(cameraPos.x, -22, 22);
-        cameraPos.y = Mathf.Clamp(cameraPos.y, -12, 12);
+        cameraPos.y = Mathf.Clamp(cameraPos.y, -12, 0);
 
         transform.position = cameraPos;
     }
