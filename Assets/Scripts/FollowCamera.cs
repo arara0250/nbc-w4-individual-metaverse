@@ -22,6 +22,11 @@ public class FollowCamera : MonoBehaviour
 
         Vector3 cameraPos = transform.position;
         cameraPos = target.position + offset;
+
+        // camera 추적 범위 제한
+        cameraPos.x = Mathf.Clamp(cameraPos.x, -22, 22);
+        cameraPos.y = Mathf.Clamp(cameraPos.y, -12, 12);
+
         transform.position = cameraPos;
     }
 }
