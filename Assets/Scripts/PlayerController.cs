@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         float movingY = Input.GetAxisRaw("Vertical");
 
         // 디버깅 코드
-        string input = "";
+        /*string input = "";
         if (movingY == 1) input += "↑";
         else if (movingY == -1) input += "↓";
 
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         else if (movingX == -1) input += "←";
 
         Debug.Log($"{input}");
-        input = "";
+        input = "";*/
 
 
         movingDir = new Vector2(movingX, movingY).normalized;
