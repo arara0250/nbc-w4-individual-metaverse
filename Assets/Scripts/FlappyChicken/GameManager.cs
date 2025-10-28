@@ -12,26 +12,26 @@ public class GameManager : MonoBehaviour
         get { return gameManager; }
     }
 
-    UIManager uiManager;
-    public UIManager UiManager { get { return uiManager; } }
+    FlappyUIManager flappyUiManager;
+    public FlappyUIManager UiManager { get { return flappyUiManager; } }
 
     private int currentScore = 0;
 
     private void Awake()
     {
         gameManager = this;
-        uiManager = FindObjectOfType<UIManager>();
+        flappyUiManager = FindObjectOfType<FlappyUIManager>();
     }
 
     private void Start()
     {
-        uiManager.UpdateScore(0);
+        flappyUiManager.UpdateScore(0);
     }
 
     public void GameOver()
     {
         Debug.Log("Game Over");
-        uiManager.SetRestart();
+        flappyUiManager.SetRestart();
     }
 
     public void RestartGame()
@@ -45,6 +45,6 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Score: " + currentScore);
 
-        uiManager.UpdateScore(currentScore);
+        flappyUiManager.UpdateScore(currentScore);
     }
 }
