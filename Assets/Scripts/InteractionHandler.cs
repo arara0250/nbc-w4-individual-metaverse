@@ -87,6 +87,13 @@ public class InteractionHandler : MonoBehaviour
             return;
         }
 
+        // StackStraw => 세로모드
+        if (miniGameName == "StackStrawScene")
+        {
+            /*Screen.orientation = ScreenOrientation.Portrait;
+            Screen.SetResolution(1080, 1920, true);*/
+        }
+            
         SceneManager.LoadScene(miniGameName);
     }
 }

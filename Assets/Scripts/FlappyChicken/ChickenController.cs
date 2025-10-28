@@ -14,12 +14,12 @@ public class ChickenController : MonoBehaviour
 
     bool isFlap = false;
 
-    GameManager gameManager;
+    FlappyGameManager gameManager;
 
     // Start is called before the first frame update
     private void Start()
     {
-        gameManager = GameManager.Instance;
+        gameManager = FlappyGameManager.Instance;
 
         anim = transform.GetComponentInChildren<Animator>();
         if (anim == null)

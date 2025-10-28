@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static StackUIManager;
 
-public class ScoreUI : BaseUI
+public class StackScoreUI : StackBaseUI
 {
     TextMeshProUGUI scoreText;
     TextMeshProUGUI comboText;

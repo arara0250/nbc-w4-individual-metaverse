@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TheStack : MonoBehaviour
+public class StackGameManager : MonoBehaviour
 {
     private const float BoundSize = 3.5f;
     private const float MovingBoundsSize = 3f;
@@ -45,7 +45,7 @@ public class TheStack : MonoBehaviour
     public int BestCombo { get => bestCombo; }
 
     // PlayerPrefs (데이터 저장) 용 key string
-    private const string BestScoreKey = "BestScore";
+    private const string StackBestScoreKey = "StackBestScore";
     private const string BestComboKey = "BestCombo";
 
     // 게임 오버 처리를 위한 변수
@@ -61,7 +61,7 @@ public class TheStack : MonoBehaviour
 
         // 게임 시작 시, 저장 데이터가 있다면, 불러오고,
         // 없으면, default = 0
-        bestScore = PlayerPrefs.GetInt(BestScoreKey, 0);
+        bestScore = PlayerPrefs.GetInt(StackBestScoreKey, 0);
         bestCombo = PlayerPrefs.GetInt(BestComboKey, 0);
 
         prevBlockPosition = Vector3.down;
@@ -283,7 +283,7 @@ public class TheStack : MonoBehaviour
             bestScore = stackCount;
             bestCombo = maxCombo;
 
-            PlayerPrefs.SetInt(BestScoreKey, bestScore);
+            PlayerPrefs.SetInt(StackBestScoreKey, bestScore);
             PlayerPrefs.SetInt(BestComboKey, bestCombo);
         }
     }

@@ -20,23 +20,23 @@ public class StackUIManager : MonoBehaviour
 
     StackUIState currentState = StackUIState.Home;
 
-    HomeUI homeUI = null;
+    StackHomeUI homeUI = null;
 
-    GameUI gameUI = null;
+    StackGameUI gameUI = null;
 
-    ScoreUI scoreUI = null;
+    StackScoreUI scoreUI = null;
 
-    TheStack theStack = null;
+    StackGameManager theStack = null;
     private void Awake()
     {
         instance = this;
-        theStack = FindObjectOfType<TheStack>();
+        theStack = FindObjectOfType<StackGameManager>();
 
-        homeUI = GetComponentInChildren<HomeUI>(true);
+        homeUI = GetComponentInChildren<StackHomeUI>(true);
         homeUI?.Init(this);
-        gameUI = GetComponentInChildren<GameUI>(true);
+        gameUI = GetComponentInChildren<StackGameUI>(true);
         gameUI?.Init(this);
-        scoreUI = GetComponentInChildren<ScoreUI>(true);
+        scoreUI = GetComponentInChildren<StackScoreUI>(true);
         scoreUI?.Init(this);
 
         ChangeState(StackUIState.Home);

@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using static StackUIManager;
 
-public class GameUI : BaseUI
+public class StackGameUI : StackBaseUI
 {
     TextMeshProUGUI scoreText;
     TextMeshProUGUI comboText;

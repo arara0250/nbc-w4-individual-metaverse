@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static StackUIManager;
 
-public abstract class BaseUI : MonoBehaviour
+public abstract class StackBaseUI : MonoBehaviour
 {
     protected StackUIManager stackUIManager;
 

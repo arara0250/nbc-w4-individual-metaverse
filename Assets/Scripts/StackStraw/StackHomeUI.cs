@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static StackUIManager;
 
-public class HomeUI : BaseUI
+public class StackHomeUI : StackBaseUI
 {
     Button startButton;
     Button exitButton;
