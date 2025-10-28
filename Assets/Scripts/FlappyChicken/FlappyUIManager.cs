@@ -88,6 +88,7 @@ public class FlappyUIManager : MonoBehaviour
     {
 #if UNITY_EDITOR
         //UnityEditor.EditorApplication.isPlaying = false;
+        flappyChicken.SetGameOver(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainScene");
 #else

@@ -29,6 +29,7 @@ public class FlappyGameManager : MonoBehaviour
 
     // 게임 오버 처리를 위한 변수
     private bool isGameOver = true;
+    public void SetGameOver(bool value) => isGameOver = value;
 
     private void Awake()
     {
