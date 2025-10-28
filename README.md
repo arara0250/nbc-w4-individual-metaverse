@@ -1,8 +1,8 @@
 # 프로젝트 소개
-<img width="330" alt="image" src="https://github.com/user-attachments/assets/931a7da6-c57d-4cd8-8e19-66de93d2ec5c" />
-<img width="330" alt="image" src="https://github.com/user-attachments/assets/e159ba4b-0d6f-451e-a3ac-fc10b9a9590b" />
-<img width="330" alt="image" src="https://github.com/user-attachments/assets/e6013284-3265-468a-868b-c9f95728645c" />
-<p align=center><img width="330" alt="image" src="https://github.com/user-attachments/assets/b38abf3f-5ef6-48c0-b04d-5bbfc4e7551b" /></p>
+<img width="271" alt="image" src="https://github.com/user-attachments/assets/931a7da6-c57d-4cd8-8e19-66de93d2ec5c" />
+<img width="271" alt="image" src="https://github.com/user-attachments/assets/e159ba4b-0d6f-451e-a3ac-fc10b9a9590b" />
+<img width="271" alt="image" src="https://github.com/user-attachments/assets/e6013284-3265-468a-868b-c9f95728645c" />
+<p align=center><img width="271" alt="image" src="https://github.com/user-attachments/assets/b38abf3f-5ef6-48c0-b04d-5bbfc4e7551b" /></p>
 
 - **프로젝트 제목 :** MyMetaverse
 - **프로젝트 설명 :** 내일배움캠프 Unity 과정 12기 4주차 개인 과제 메타버스 구현 레포지토리 입니다.
