@@ -98,6 +98,7 @@
 
 # 앞으로 수정 또는 추가 구현해야 할 사항
 1. 미니 게임 실행 시, 첫 화면에 게임 설명 (게임 방법 설명?) UI 추가
-2. `Flappy Chicken` 미니 게임에서 `Exit` 버튼을 눌러 `MainScene` 으로 돌아갔을 때, 캐릭터의 직전 위치 기억 + 움직이지 않는 현상 fix
-3. `MainScene` 에서 각각의 미니 게임의 기록을 표시하는 UI 추가
-4. `Flappy Chicken` 의 점수 기록 (`PlayerPrefs`) 가 잘 동작하는지 확인하고, 오류가 있다면 수정할 것
+2. 미니 게임에서 `Exit` 버튼을 눌러 `MainScene` 으로 돌아갔을 때, 캐릭터의 직전 위치 기억
+3. ~~`Flappy Chicken` 미니 게임에서 `Exit` 버튼을 눌러 `MainScene` 으로 돌아갔을 때, 움직이지 않는 현상 fix~~ (완료)
+4. `MainScene` 에서 각각의 미니 게임의 기록을 표시하는 UI 추가
+5. `Flappy Chicken` 의 점수 기록 (`PlayerPrefs`) 가 잘 동작하는지 확인하고, 오류가 있다면 수정할 것
